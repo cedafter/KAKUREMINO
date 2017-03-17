@@ -5,7 +5,7 @@ encoding: UTF-8
 timezone: Europe/Paris
 
 # Change value to match your needs if necessary
-baseurl: "/KAKUREMINO"
+baseurl: /KAKUREMINO
 
 # Note: Github Pages only supports Kramdown !
 markdown: kramdown

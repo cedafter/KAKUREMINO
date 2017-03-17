@@ -37,6 +37,7 @@ ul.h-menu {
   font-size: 1.5rem;
   font-weight: 600;
 }
+/* Main content has smaller width and is horizontally center (margin) */
 main {
   width: 70%;
   margin: 0 auto;
