@@ -1,0 +1,52 @@
+/* Defaults */
+
+:root {
+  color: #000;
+  background-color: #FFF;
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.2;
+  background-color: #4FA5C8; /* Boston blue */
+}
+
+/* Custom commons */
+
+.line--centered {
+  text-align: center;
+}
+
+/* Custom specifics */
+.title {
+  padding: 10px;
+  font-size: 3rem;
+}
+ul.h-menu {
+  list-style-type: none;
+}
+.h-menu li {
+  display: inline-block;
+  padding: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+main {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #EFF0F1; /* White smoke */
+  padding: 5px;
+  border-radius: 8px;
+}
+main p {
+  padding-bottom: 5px;
+}
+footer {
+  padding: 5px;
+}

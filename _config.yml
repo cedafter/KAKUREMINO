@@ -1,0 +1,13 @@
+# Jekyll configuration
+
+lang: en
+encoding: UTF-8
+timezone: Europe/Paris
+
+# Excluded files
+exclude:
+- "Gemfile"
+- "Gemfile.lock"
+- "LICENSE"
+- "LICENSE.txt"
+- "README"

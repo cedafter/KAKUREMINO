@@ -1,0 +1,6 @@
+# GIT ignored files and directories
+
+*~
+_site/
+.jekyll-metadata
+Gemfile.lock

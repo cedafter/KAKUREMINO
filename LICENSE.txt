@@ -1,0 +1,6 @@
+KAKUREMINO Copyright March 2017 Cedlog.
+
+Unless otherwise noted, the source code in this directory is governed by
+the CC0 version 1.0 License. A copy of the license is distributed with
+the source code. You may also obtain a copy of the License at:
+   https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt
