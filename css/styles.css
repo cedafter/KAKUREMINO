@@ -36,10 +36,24 @@ body {
   text-align: center;
 }
 ul.h-menu {
+  padding: 8px;
   list-style-type: none;
 }
 .h-menu li {
   display: inline-block;
+  margin-right: 8px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.h-menu li.active {
+  background-color: #EFF0F1; /* White smoke */
+}
+.h-menu li.active a {
+  font-style: italic;
+}
+.h-menu a {
+  text-decoration: none;
 }
 
 /* === Generic/Custom === */
