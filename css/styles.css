@@ -6,13 +6,15 @@
   box-sizing: border-box;
 }
 :root {
+  height: 100%;
   color: #000;
   background-color: #FFF;
-  height: 100%;
 }
 body {
   min-height: 100%;
-  font-family: sans-serif;
+  word-wrap: break-word; /* Chrome, Chromium */
+  font-weight: 400; /* Firefox default */
+  font-family: "DejaVu Sans Mono", sans-serif; /* Linux system */
   background-color: #4FA5C8; /* Boston blue */
 }
 
