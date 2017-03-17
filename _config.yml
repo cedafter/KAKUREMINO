@@ -4,10 +4,17 @@ lang: en
 encoding: UTF-8
 timezone: Europe/Paris
 
-# Excluded files
+# Change value to match your needs if necessary
+baseurl: "/KAKUREMINO"
+
+# Note: Github Pages only supports Kramdown !
+markdown: kramdown
+kramdown:
+ auto_ids: false
+
+# Note: Some of these files are excluded by default (eg Gemfile)
 exclude:
 - "Gemfile"
 - "Gemfile.lock"
 - "LICENSE"
-- "LICENSE.txt"
 - "README"
