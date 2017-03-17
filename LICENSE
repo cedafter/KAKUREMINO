@@ -2,32 +2,12 @@
 
 Cedlog, March 2017.
 
-## CC0 1.0 License
+## Public Domain / CC0 1.0 License
 
 Unless otherwise noted, the contents of current directory and subdirectories
-are governed by the CC0 1.0 License.
-You can find a copy of the License in the _licenses directory or at:
-   https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt
-
-## [LICENSE_NAME] [LICENSE_VERSION]
-
-Unless otherwise noted, the contents of following directory and subdirectories
-are governed by the [LICENSE_NAME] [LICENSE_VERSION] License.
-You can find a copy of the License in the _licenses directory or at:
-   [LICENSE_LINK_URL]
-
-* directory-1/
-* rel-path/directory-2/
-* etc/
-
-## Public Domain
-
-Unless otherwise noted, the contents of following directory and subdirectories
 are FREE TO USE for ANY commercial or non-commercial purpose.
 Please notice that this DOES NOT means that they are not copyrighted.
 They are published as unlicensed or under the Public Domain only if applicable.
 Otherwise please consider them as governed by the CC0 1.0 License as default.
 You can find a copy of the License in the _licenses directory or at:
    https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt
-
-* some-public-stuff-directory/
