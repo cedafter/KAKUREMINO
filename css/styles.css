@@ -66,20 +66,18 @@ p {
   line-height: 1.3;
 }
 header {
-  /* Limitation: Height is fixed for main to expand remaining height
+  /* Limitation: Height is explicit for main to expand remaining height
   Height = Title (font*line-height + padding) +
     UL and LI (content-box padding) +
     Menu item (font*line-height)
   */
-  min-height: calc(
-    (2.5rem + 1.5rem) * 1.2 + 10px + 8px * 4
-  );
+  min-height: calc((2.5rem + 1.5rem) * 1.2 + 10px + 8px * 4);
 }
 main {
   /* Less wide and horizontally centered (margin) */
   width: 70%;
-  /* Expand to take all remaining height
-  Limitation: Header and footer have fixed height (other solutions exists)
+  /* Expands to take all remaining height
+  Limitation: Header + Footer heights are explicit (other solutions exists)
   Min-Height = 100vh - (Header + Footer)
   */
   min-height: calc(100vh - (
@@ -93,7 +91,7 @@ main {
   background-color: #EFF0F1; /* White smoke */
 }
 footer {
-  /* Limitation: Height is fixed for main to expand remaining height
+  /* Limitation: Height is explicit for main to expand remaining height
   Height = content-box padding + font*line-height
   */
   min-height: calc(1rem * 1.2 + 8px * 2);
