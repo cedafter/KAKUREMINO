@@ -8,11 +8,13 @@
 :root {
   height: 100%;
   color: #000;
+  font-size: 16px;
   background-color: #FFF;
 }
 body {
   min-height: 100%;
   word-wrap: break-word; /* Chrome, Chromium */
+  line-height: 1.2; /* Default is between 1.15 and 1.2 */
   font-weight: 400; /* Firefox default */
   font-family: "DejaVu Sans Mono", sans-serif; /* Linux system */
   background-color: #4FA5C8; /* Boston blue */
@@ -38,13 +40,11 @@ body {
   text-align: center;
 }
 ul.h-menu {
-  padding: 8px;
   list-style-type: none;
 }
 .h-menu li {
   display: inline-block;
   margin-right: 8px;
-  padding: 8px;
   background-color: #fff;
   border-radius: 5px;
 }
@@ -65,10 +65,36 @@ h1, h2, h3, h4, p {
 p {
   line-height: 1.3;
 }
+header {
+  /* Limitation: Height is fixed for main to expand remaining height
+  Height = Title (font*line-height + padding) +
+    UL and LI (content-box padding) +
+    Menu item (font*line-height)
+  */
+  min-height: calc(
+    (2.5rem + 1.5rem) * 1.2 + 10px + 8px * 4
+  );
+}
 main {
   /* Less wide and horizontally centered (margin) */
   width: 70%;
+  /* Expand to take all remaining height
+  Limitation: Header and footer have fixed height (other solutions exists)
+  Min-Height = 100vh - (Header + Footer)
+  */
+  min-height: calc(100vh - (
+    /* Header */
+    (2.5rem + 1.5rem) * 1.2 + 10px + 8px * 4 +
+    /* Footer */
+    1rem * 1.2 + 8px * 2
+  ));
   margin: 0 auto;
   border-radius: 8px;
   background-color: #EFF0F1; /* White smoke */
+}
+footer {
+  /* Limitation: Height is fixed for main to expand remaining height
+  Height = content-box padding + font*line-height
+  */
+  min-height: calc(1rem * 1.2 + 8px * 2);
 }
