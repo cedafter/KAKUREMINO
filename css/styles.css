@@ -58,9 +58,12 @@ ul.h-menu {
   text-decoration: none;
 }
 
-/* === Generic/Custom === */
+/* === Standard elements === */
 h1, h2, h3, h4, p {
   margin-bottom: 10px;
+}
+ul, ol {
+  padding-left: 2.5rem; /* Firefox default is 40px */
 }
 header {
   /* Limitation: Height is explicit for main to expand remaining height
