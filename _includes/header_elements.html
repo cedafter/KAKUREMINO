@@ -1,0 +1,20 @@
+<h1 class="line--centered headline">{{ site.title }}</h1>
+<nav>
+  <ul class="content-box h-menu line--centered title">
+    {% if page.item_1_active == 1 %}
+    <li class="content-box active"><a>Blog</a></li><!--
+      DON'T display or include spaces between list items !
+    -->{% else %}<li class="content-box">
+      <a href="{{ site.baseurl }}/blog.html">
+        {% if page.item_1_active == 2 %}Back to posts
+        {% else%}Blog{% endif %}
+      </a>
+    </li>{% endif %}{% if page.item_2_active == 1 %}<!--
+      DON'T display or include spaces between list items !
+    --><li class="content-box active"><a>About</a></li><!--
+      DON'T display or include spaces between list items !
+    -->{% else %}<li class="content-box">
+      <a href="{{ site.baseurl }}/">About</a>
+    </li>{% endif %}
+  </ul>
+</nav>

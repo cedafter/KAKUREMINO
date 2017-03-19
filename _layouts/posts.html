@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head_elements.html %}
+  <head>
+  <!-- Classic layout (Header, Main, Footer) -->
+  <body>
+    <header>
+      {% include header_elements.html %}
+    </header>
+    <main>
+      <!-- Article: Self contained content which can be syndicated -->
+      <article class="content-box">
+        <h1 class="title">Posts</h1>
+        <!-- Only display posts until current date (not future posts) -->
+        {% for post in site.posts %}
+          <p class="subtitle">
+            <em>{{ post.date | date: "%-d %B %Y"}}</em> -
+            <!-- post.url is absolute (not relative) -->
+            <a href="{{ site.baseurl }}{{ post.url }}">
+              <strong>{{ post.title }}</strong>
+            </a> - <em>By {{ post.author }}</em>
+          </p>
+        {% endfor %}
+      </article>
+    </main>
+    <footer class="content-box line--centered">
+      {% include footer_elements.html %}
+    </footer>
+  </body>
+</html>

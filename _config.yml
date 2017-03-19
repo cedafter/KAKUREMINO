@@ -7,6 +7,11 @@ timezone: Europe/Paris
 # Change value to match your needs if necessary
 baseurl: /KAKUREMINO
 
+# Website
+title: KAKUREMINO
+description: "KAKUREMINO is a very basic HTML template
+created by Cedlog and powered by Jekyll"
+
 # Note: Github Pages only supports Kramdown !
 markdown: kramdown
 kramdown:
