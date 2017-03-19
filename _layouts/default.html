@@ -14,13 +14,17 @@
         {{ content }}
         <p><!-- Content separator (temporary) --><br></p>
         <p>
-          <em>{{ page.author}}, {{ page.date | date: "%-d %B %Y"}}</em>
+          By <em>{{ page.author}}, {{ page.date | date: "%-d %B %Y"}}</em>
           <br>
           Tags: <em>{{ page.tags | join: ', ' }}</em>
-          <!--
-          {% for tag in page.tags %}<em>{{ tag }}</em>
-          {% endfor %}
-        -->
+          {% if page.copyright == 1 %}
+          <br>
+          Copyright {{ page.author}},
+          <a href="{{ site.author_license_url }}">
+            {{ site.author_license }}<!--
+              DON'T display or include extra spaces in link text !
+          --></a>
+          {% endif %}
         </p>
       </article>
     </main>

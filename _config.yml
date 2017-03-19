@@ -12,6 +12,10 @@ title: KAKUREMINO
 description: "KAKUREMINO is a very basic HTML template
 created by Cedlog and powered by Jekyll"
 
+author_license: "CC BY-SA 4.0"
+author_license_url:
+ "https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt"
+
 # Note: Github Pages only supports Kramdown !
 markdown: kramdown
 kramdown:

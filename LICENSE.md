@@ -16,10 +16,10 @@ the _licenses directory or at:
   
 https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt
 
-### Creative Commons CC BY-SA 4.0
+### Creative Commons BY-SA 4.0
 
 The contents of the following directories and subdirectories are
-governed by the Creative Commons CC BY-SA 4.0 License.
+governed by the Creative Commons BY-SA 4.0 License.
 You can find a copy of the License in the _licenses directory or at:
   
 https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt
