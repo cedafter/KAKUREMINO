@@ -8,7 +8,7 @@ Cedlog, March 2017.
 
 Unless otherwise noted, the contents of current directory and subdirectories
 are FREE TO USE for ANY commercial or non-commercial purpose.
-Please notice that this DOES NOT mean that they are not copyrighted.
+Please note that this DOES NOT mean that they are not copyrighted.
 They are published as unlicensed or under the Public Domain only if applicable.
 Otherwise please consider them as governed by the Creative Commons
 CC0 1.0 License as default. You can find a copy of the License in
@@ -18,8 +18,10 @@ https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt
 
 ### Creative Commons BY-SA 4.0
 
-The contents of the following directories and subdirectories are
-governed by the Creative Commons BY-SA 4.0 License.
+Unless otherwise noted, the contents of the following directories and
+subdirectories are governed by the Creative Commons BY-SA 4.0 License.
+You are FREE to remove or replace them by your own content if needed.
+You are FREE to copyright and license your content under these directories.
 You can find a copy of the License in the _licenses directory or at:
   
 https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt
