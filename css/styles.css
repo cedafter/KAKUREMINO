@@ -14,10 +14,17 @@
 body {
   min-height: 100%;
   word-wrap: break-word; /* Chrome, Chromium */
-  line-height: 1.25; /* Default is between 1.15 and 1.2 */
+  line-height: 1.3; /* Default is between 1.15 and 1.2 */
   font-weight: 400; /* Firefox default */
   font-family: "DejaVu Sans Mono", sans-serif; /* Linux system */
   background-color: #4FA5C8; /* Boston blue */
+  
+  /* Space for fixed positioned header.
+  Can also add 1px more to include calc() decimal part.
+  Header uses min-height so this value should be increased if header grows !
+  Other solution use a margin-top in main but that will move body position.
+  */
+  padding-top: calc((2.5rem + 1.5rem) * 1.3 + 10px + 8px * 4);
 }
 
 /* === Custom === */
@@ -71,7 +78,13 @@ header {
     UL and LI (content-box padding) +
     Menu item (title font*line-height)
   */
-  min-height: calc((2.5rem + 1.5rem) * 1.2 + 10px + 8px * 4);
+  min-height: calc((2.5rem + 1.5rem) * 1.3 + 10px + 8px * 4);
+  
+  /* Fixed positioned header */
+  position: fixed;
+  top: 0;
+  left: 0; right: 0; /* Horizontally centered */
+  background-color: #4FA5C8; /* Boston blue */
 }
 main {
   /* Less wide and horizontally centered (margin) */
@@ -82,9 +95,9 @@ main {
   */
   min-height: calc(100vh - (
     /* Header */
-    (2.5rem + 1.5rem) * 1.2 + 10px + 8px * 4 +
+    (2.5rem + 1.5rem) * 1.3 + 10px + 8px * 4 +
     /* Footer */
-    1rem * 1.2 + 8px * 2
+    1rem * 1.3 + 8px * 2
   ));
   margin: 0 auto;
   border-radius: 8px;
@@ -94,5 +107,5 @@ footer {
   /* Limitation: Height is explicit for main to expand remaining height
   Height = content-box padding + default font*line-height
   */
-  min-height: calc(1rem * 1.2 + 8px * 2);
+  min-height: calc(1rem * 1.3 + 8px * 2);
 }
