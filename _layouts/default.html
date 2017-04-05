@@ -5,10 +5,10 @@
   <head>
   <!-- Classic layout (Header, Main, Footer) -->
   <body>
-    <header>
+    <header class="header">
       {% include header_elements.html %}
     </header>
-    <main>
+    <main class="main">
       <!-- Article: Self contained content which can be syndicated -->
       <article class="content-box">
         {{ content }}
@@ -28,7 +28,7 @@
         </p>
       </article>
     </main>
-    <footer class="content-box line--centered">
+    <footer class="footer content-box line--centered">
       {% include footer_elements.html %}
     </footer>
   </body>
