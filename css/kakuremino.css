@@ -1,0 +1,110 @@
+/* *** KAKUREMINO template ***
+Layout:
+  - Elements: Header (Sticky/Top), Main content, Footer (Sticky/Bottom).
+  - Notes: Centered elements.
+Components: Header (Title, Short Desc, Menu).
+*/
+
+/* ====== STICKY HEADER/FOOTER & CENTERED ITEMS (on large screen) ====== */
+body {
+  background-color: #000;
+  /* Sticky footer (ie full-height body and main) */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* Sticky header (Tall screen only) */
+@media (min-height: 480px) {
+  body {
+    /* Sticky header (Fixed height) */
+    padding-top: 140px;
+  }
+  .header {
+    /* Fixed height because it is out of document flow (fixed position) */
+    height: 140px;
+    position: fixed;
+    top: 0;
+    /* Centered */
+    left: 0; right: 0;
+  }
+}
+/* Fixed width (Large screen) */
+.main, .header, .footer {
+  /* Fixed width because flex direction column makes it defaults to content size */
+  width: 64rem;
+}
+/* Full width main content (Small screen) */
+@media (max-width: 64rem) {
+  .header, .main, .footer {
+    width: 100%;
+  }
+}
+
+/* ====== HEADER / MAIN / FOOTER ====== */
+
+.header, .main, .footer {
+  /* Include overflowing children margin */
+  overflow: auto;
+  /* Centered */
+  margin: 0 auto;
+  /* Limit to 100% because fixed width can be equal to (100% + V scrollbar) > 100% */
+  max-width: 100%;
+}
+.header, .footer {
+  background-color: #4FA5C8; /* Boston blue */
+  text-align: center;
+  font-family: monospace;
+}
+.main {
+  padding: 0 8px;
+  background-color: #fff;
+  /* Full-height main (for Sticky footer) */
+  flex: 1;
+}
+.main-header {
+  overflow: auto;
+  border-bottom: 2px solid #777;
+}
+.main-header p {
+  margin: 0;
+}
+.footer {
+  /* Version specific: Some space for its content */
+  padding: 8px 0;
+}
+
+/* ====== TITLE & SHORT DESCRIPTION (Header) ====== */
+
+.header h1 {
+  text-shadow: 1px 1px 0 #ddd;
+}
+.header span {
+  display: block;
+}
+
+/* ====== NAVIGATION MENU (Header) ====== */
+
+.nav-menu, .nav-menu ul {
+  margin: 8px 0;
+  padding: 0;
+}
+.nav-menu li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 8px;
+  padding: 0;
+}
+.nav-menu li a {
+  /* Enable modifiable height */
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 2px solid #333;
+  font-size: 1.2rem;
+  padding: 8px;
+  color: #333;
+  background-color: #bbb;
+}
+.nav-menu li a[selected] {
+  background-color: #fff;
+}

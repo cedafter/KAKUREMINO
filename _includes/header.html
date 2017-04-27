@@ -1,0 +1,22 @@
+<header class="header">
+  <h1>{{ site.title }}</h1>
+  <span>{{ site.short_desc }}</span>
+  <nav class="nav-menu">
+    <ul>
+      <li>
+        {% if page.menu_item_id == 0 %}<a selected>Home</a>
+        {% else %}<a href="{{ site.baseurl }}/">Home</a>{% endif %}
+      </li><!--
+        DON'T display or include spaces between list items !
+      --><li>
+        {% if page.menu_item_id == 1 %}<a selected>Preview</a>
+        {% else %}<a href="{{ site.baseurl }}/preview.html">Preview</a>{% endif %}
+      </li><!--
+        DON'T display or include spaces between list items !
+      --><li>
+          {% if page.menu_item_id == 2 %}<a selected>About</a>
+          {% else %}<a href="{{ site.baseurl }}/about.html">About</a>{% endif %}
+        </li>
+    </ul>
+  </nav>
+</header>

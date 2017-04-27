@@ -1,0 +1,111 @@
+/* *** Minimalist theme (STYLING) ***
+Jekyll Kramdown classes: .highlighter-rouge, .highlight
+.footnote, .footnotes, .reversefootnote
+
+Unstyled elements (User-agent default):
+- Elements: button, textarea, input, select.
+- Other: HTML outline eg header in an article or a section.
+*/
+
+:root {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 16px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  line-height: 1.4;
+  color: #333;
+  background-color: #fff;
+  /* Linux, Android, Default */
+  font-family: "Liberation Sans", Verdana, monospace;
+}
+img {
+  /* Image using “border-box” is resized if adding a border/padding */
+  box-sizing: content-box;
+}
+ol, ul, p, pre, .footnotes {
+  margin: 1rem 0 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.5em 0 0;
+  line-height: 1.2;
+}
+li {
+  padding-bottom: 8px;
+}
+/* Anchor [Order: (L)ink, (V)isited, (H)over, (A)ctive] */
+a {
+  color: #11b;
+  outline: none;
+}
+a:visited {
+  color: #161;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  color: #a33;
+}
+/* PRE is always used to wrap code (Kramdown) */
+pre {
+  /* Scroll to preserve content formatting (eg indentation) */
+  overflow: auto;
+}
+/* Contrasted elements */
+blockquote, pre {
+  background-color: #eee;
+}
+code, sup, .footnote, .footnotes {
+  font-family: monospace;
+  font-size: 0.875rem;
+}
+blockquote, .reversefootnote {
+  font-size: 1.125rem;
+}
+blockquote, pre {
+  padding: 8px 16px;
+  border-left: 7px solid;
+  border-radius: 6px;
+  text-shadow: 0 1px 0 #fff;
+}
+blockquote {
+  margin: 1rem 28px 0;
+}
+blockquote::before, blockquote::after {
+  font-size: 2rem;
+  line-height: 1;
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+blockquote p {
+  display: inline;
+}
+/* Table */
+table {
+  border-collapse: collapse;
+  text-align: left;
+  margin: 8px 0;
+}
+th, td {
+  border: 2px solid #333;
+  padding: 5px;
+}
+thead, tfoot {
+  color: #fff;
+  background-color: #555;
+}
+hr, .footnotes {
+  border-top: 2px inset;
+}
+abbr {
+  /* Chrome does not support text-decoration: dashed */
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}

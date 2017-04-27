@@ -2,12 +2,13 @@
 
 ## About
 
-*KAKUREMINO* is a very basic HTML template created by Cedlog.
+*KAKUREMINO* is a minimalist basic HTML template for Jekyll.
 The name comes from *"Kakuremino no jutsu"* from Naruto (TM) anime.
 
 ## Copyright(s) and License(s)
 
-Unless otherwise noted, some contents of current directory and subdirectories
-are copyrighted and licensed. See the LICENSE.md file for details.
+Unless otherwise noted, contents of current directory and subdirectories
+are copyrighted and licensed.
+See the [LICENSE.md](LICENSE.md) file and LICENSING directory for details.
 
-Cedlog, March 2017.
+Copyright Cedlog, March 2017.

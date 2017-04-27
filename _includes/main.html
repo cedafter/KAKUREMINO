@@ -1,0 +1,25 @@
+<main class="main">
+  <!-- Article author header (eg for a blog post) -->
+{% if page.title != nil and page.author != nil%}
+  <header class="main-header">
+    <h1>{{ page.title }}</h1>
+    <p>
+      {% if page.date != nil %}
+      <strong><em>{{ page.date | date: "%-d %B %Y"}}</em></strong> -
+      {% endif %}
+      By <em>{{ page.author }}</em>
+      {% if page.license != nil %}
+      - License:
+      <a {% if page.license_url != nil %}href="{{ page.license_url }}"{% endif %}>
+        {{ page.license }}
+      </a>
+      {% endif %}
+    </p>
+  </header>
+  <article>
+    {{ content }}
+  </article>
+{% elsif page.author == nil %}
+  {{ content }}
+{% endif %}
+</main>

@@ -1,15 +1,12 @@
 ---
-layout: default
+menu_item_id: 1
+title: Preview
+tags: [KAKUREMINO, Licensing]
 author: Cedlog
-title: Kramdown preview
-copyright: 1
-# Tags
-tags: [Kramdown]
-# Menu items: Blog (2 for posts), About
-item_1_active: 2
-item_2_active:
+license: "CC0 1.0"
+license_url: https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt
 ---
-# Kramdown preview
+# Kramdown
 This is a preview of some most used **Kramdown** formatting elements.
 It is used to preview and compare CSS styles on generated HTML elements.
 
@@ -19,7 +16,7 @@ A new paragraph is generated for every block of text preceded by a blank line.
 \\
 Two consecutive backslash or space characters generated a line break (\<br\>).
 
-HTML element(s): **\<p\>**
+HTML elements: **\<p\>**
 
 ## Text formatting
 A text can be formatted like examples below but cannot be **underlined** :
@@ -28,7 +25,7 @@ A text can be formatted like examples below but cannot be **underlined** :
 * ***Bold and Italic*** (\<strong\>\<em\>)
 * ~~Strike through~~ (\<del\>)
 
-HTML element(s): **\<strong\> \<em\> \<del\>**
+HTML elements: **\<strong\> \<em\> \<del\>**
 
 ## Headers (heading) {#headers-id}
 Headers have an auto-generated ID by default but a custom ID can be specified too.
@@ -42,7 +39,7 @@ Note: auto-generated ID has been *disabled* for this preview.
 ##### H5 Heading (\<h5\>)
 ###### H6 Heading (\<h6\>)
 
-HTML element(s): **\<h1\> \<h2\> \<h3\> \<h4\> \<h5\> \<h6\>**
+HTML elements: **\<h1\> \<h2\> \<h3\> \<h4\> \<h5\> \<h6\>**
 
 ## Blockquote
 Blockquote content is wrapped in always paragraph (\<p\>).
@@ -50,7 +47,7 @@ Kramdown formatting is supported inside a blockquote (\<blockquote\>).
 
 > Keep things simple and ~~stupid~~ quick.
 
-HTML element(s): **(\<blockquote\>) (\<p\>)**
+HTML elements: **(\<blockquote\>) (\<p\>)**
 
 ## Code (Preformatted text)
 A code generates a \<div\> with a class value of <<highlighter-rouge>>.
@@ -70,17 +67,20 @@ if(Math.max(work.duration, fun.duration) > daily.threshold) {
 }
 ~~~
 
-HTML element(s): **\<div\> \<pre\> \<code\> \<span\>**
+HTML elements: **\<div\> \<pre\> \<code\> \<span\>**
+\\
+CSS Classes: **highlighter-rouge highlight**
 
 ## Unformatted text (No conversion)
-Text can be generated **AS-IS** without any conversion (longer wrapped in paragraph).
-
+Text can be generated **AS-IS** without any conversion.
+\\
+\\
 {::nomarkdown}
 This "text IS NOT wrapped in a paragraph".
 It is generated **AS-IS** without any conversion.
 {:/}
 
-HTML element(s): **none**
+HTML elements:
 
 ## Images
 
@@ -91,7 +91,7 @@ HTML element(s): **none**
 [another image]: {{ site.baseurl }}/favicon.png
 {: height="70px" width="70px"}
 
-HTML element(s): **\<img\>**
+HTML elements: **\<img\>**
 
 ## Links
 Link examples:
@@ -106,9 +106,9 @@ Link examples:
   * [Conclusion](#conclusion-id)
 
 [Twitter URL]: https://twitter.com "Twitter website"
-{: style="color: #181"}
+{: style="color: #c11"}
 
-HTML element(s): **\<a\>**
+HTML elements: **\<a\>**
 
 ## Footnotes
 A footnote looks like this example[^1].
@@ -117,16 +117,20 @@ The link is wrapped in a \<sup\> element which will have an ID of *<<fnref:1>>* 
 The footnote definition will appear **at the end of this document**.
 
 It has a class value of **footnotes** and an ID which will be *<<fn:1>>*.
-It has a link (\<a\>) with a class of *reversefootnote* which targets to footnote ID.
+It has a link (\<a\>) with a class of *reversefootnote* which points back to the footnote ID.
 
-HTML element(s): **\<sup\> \<a\>**
+HTML elements: **\<sup\> \<a\>**
+\\
+CSS Classes: **footnote**
 
 [^1]: This is a footnote definition example.
     All footnote definition are wrapped in one \<div\> with a class of *footnotes*.
     Each definition is a list item (\<li\>) of an unordered list (\<li\>).
     Each list item has an ID which is *<<fnref:1>>* for this example.
 
-    HTML element(s): **\<div\> \<ol\> \<li\> \<p\> \<a\>**
+    HTML elements: **\<div\> \<ol\> \<li\> \<p\> \<a\>**
+    \\
+    CSS Classes: **footnotes reversefootnote**
 
     A **four** spaces indentation is required at the beginning
     of each line of a multi-line footnote definition.
@@ -161,14 +165,13 @@ Another term (which makes the previous text become a term)
 
 : Same for this one which is wrapped in a paragraph (\<p\>).
 
-HTML element(s): **\<dl\> \<dt\> \<dd\> \<p\>**
+HTML elements: **\<dl\> \<dt\> \<dd\> \<p\>**
 
 ## Table
 Table **does not support multi-line** text.
 Note that each cell of the table footer is actually generated as \<td\> and not as \<th\>.
 \\
-Also each cell will have an inline style for its content alignment
-(only if using Kramdown table alignment syntax).
+Also each column can have a specified content alignment which is generated in an inline style.
 
 | Header 1: TR1 / TH1 | Header 1: TR1 / TH2 | Header 1: TR1 / TH3 | Header 1: TR1 / TH4 |
 |:-|:-:|:-:|-:|
@@ -180,7 +183,7 @@ Also each cell will have an inline style for its content alignment
 |===
 | Footer 1: TR1 / TD1 | Footer 1: TR1 / TD2 | Footer 1: TR1 / TD3 | Footer 1: TR1 / TD4 |
 
-HTML element(s): **\<table\> \<thead\> \<tr\> \<th\> \<td\> \<tfooter\>**
+HTML elements: **\<table\> \<thead\> \<tr\> \<th\> \<td\> \<tfooter\>**
 
 ## Miscellaneous
 
@@ -193,12 +196,12 @@ symbols >>
 
 ### Underline text
 Alternative solutions to underline text can be one listed below :
-\\
+
 Specifying an *inline style attribute or CSS rule*{: style="text-decoration: underline"}.
-\\
+
 Wrapping in an HTML <span style="text-decoration: underline; color: #00F;">
 "span" element with inline style attribute or CSS rule</span>.
-\\
+
 Using the HTML <u>"underline" element</u>.
 
 ### Kramdown comment
@@ -221,16 +224,16 @@ will generate an horizontal line (\<hr\>).
 \\
 The sequence must be preceded by a blank line (Otherwise it is interpreted as a heading).
 
-HTML element(s): **\<hr\>**
+HTML elements: **\<hr\>**
 
 _ _ _
 
 ### Abbreviations
-An abbreviation (\<abbr\>) can be defined for a word and it case sensitive. For example CSS.
+An abbreviation (\<abbr\>) can be defined for a word and it case sensitive. For example WWW.
 
-It will only apply on for all occurrences of <<CSS>> but not on occurrences of <<css>>.
+It will apply on all occurrences of <<WWW>> but not on occurrences of <<www>>.
 
-HTML element(s): **\<abbr\>**
+HTML elements: **\<abbr\>**
 
 ## Conclusion
 {: id="conclusion-id"}
@@ -239,4 +242,4 @@ HTML element(s): **\<abbr\>**
 \\
 The syntax is not difficult and it has some limitations though but it is a nice tool !
 
-*[CSS]: Cascading Style Sheets
+*[WWW]: World Wide Web

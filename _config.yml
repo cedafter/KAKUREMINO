@@ -1,29 +1,50 @@
-# Jekyll configuration
+# *** Jekyll configuration ***
 
+# Change values if not correct
+baseurl: /KAKUREMINO
+author: Cedlog
+author_url: https://github.com/cedlog
+title: KAKUREMINO
+short_desc: A minimalist template for Jekyll
+description: "KAKUREMINO is a minimalist basic
+HTML template powered by Jekyll"
+icon: favicon.png
 lang: en
 encoding: UTF-8
 timezone: Europe/Paris
 
-# Change value to match your needs if necessary
-baseurl: /KAKUREMINO
+# Github metadata (Change values if not correct)
+repository: username/repository
 
-# Website
-title: KAKUREMINO
-description: "KAKUREMINO is a very basic HTML template
-created by Cedlog and powered by Jekyll"
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      # Theme style
+      theme: "minimalist"
+      # Layout style
+      style: "kakuremino"
+      app: "app"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Cedlog"
+      license: "CC BY-SA 4.0"
+      license_url: https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt
 
-author_license: "CC BY-SA 4.0"
-author_license_url:
- "https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt"
-
-# Note: Github Pages only supports Kramdown !
+# Kramdown (Github Pages)
 markdown: kramdown
 kramdown:
  auto_ids: false
 
-# Note: Some of these files are excluded by default (eg Gemfile)
+# Excluded files (All with same beginning pattern / Case sensitive)
 exclude:
 - "Gemfile"
-- "Gemfile.lock"
-- "LICENSE"
 - "README"
+- "LICENSE"
+- "LICENSING"
