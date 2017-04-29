@@ -93,6 +93,12 @@ This is because the header height must be explicit (overflow is hidden).
 
 /* ====== NAVIGATION MENU (Header) ====== */
 
+.nav-menu ul {
+  /* Displayed in one line only because the header height must be explicit */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .nav-menu, .nav-menu ul {
   margin: 8px 0;
   padding: 0;

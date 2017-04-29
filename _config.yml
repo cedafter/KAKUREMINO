@@ -15,6 +15,19 @@ lang: en
 encoding: UTF-8
 timezone: Europe/Paris
 
+# Header menu items (3 items only / Header height is fixed).
+# label: Item label.
+# uri: Item URI (relative link).
+item_0:
+  label: "Home"
+  uri:
+item_1:
+  label: "Preview"
+  uri: preview.html
+item_2:
+  label: "About"
+  uri: about.html
+
 # Github metadata (Change values if not correct)
 repository: username/repository
 
