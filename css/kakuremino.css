@@ -14,7 +14,7 @@ body {
   flex-direction: column;
 }
 /* Sticky header (Tall screen only) */
-@media (min-height: 480px) {
+@media (min-height: 490px) {
   body {
     /* Sticky header (Fixed height) */
     padding-top: 140px;
@@ -73,13 +73,22 @@ body {
   padding: 8px 0;
 }
 
-/* ====== TITLE & SHORT DESCRIPTION (Header) ====== */
+/* ====== TITLE & SHORT DESCRIPTION (Header) ======
+The following elements are displayed in one line only (Header): title, short_desc.
+This is because the header height must be explicit (overflow is hidden).
+*/
 
 .header h1 {
   text-shadow: 1px 1px 0 #ddd;
 }
 .header span {
   display: block;
+}
+.header h1, .header span {
+  /* Displayed in one line only because the header height must be explicit */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ====== NAVIGATION MENU (Header) ====== */

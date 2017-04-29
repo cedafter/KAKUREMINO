@@ -1,11 +1,13 @@
 # *** Jekyll configuration ***
+# The following elements are displayed in one line only: title, short_desc.
+# This is because the header height must be explicit (overflow is hidden).
 
 # Change values if not correct
 baseurl: /KAKUREMINO
 author: Cedlog
 author_url: https://github.com/cedlog
 title: KAKUREMINO
-short_desc: A minimalist template for Jekyll
+short_desc: A very basic and minimalist template for Jekyll
 description: "KAKUREMINO is a minimalist basic
 HTML template powered by Jekyll"
 icon: favicon.png
